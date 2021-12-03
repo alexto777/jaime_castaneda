@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+:root{
+    --color-primario:#F3613C;
+    --color-secundario:#242D52;
+    --color-suave:#B3B2B7;
+}
+.general{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    color: var(--color-secundario);
+    align-items: center;
+    padding: 5% 10% 5% 10%;
+    width: 100%;
+}
+.nada{
+    text-decoration: none;
+    color:var(--color-secundario);
+    justify-content: space-between;
+    padding-left: 2rem;
+    font-weight: 500;
+    font-size: 13px;
+}
+.nada:hover{
+    background-color:white;
+    color: var(--color-primario);
+}
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    color: var(--color-secundario);
+    align-items: center;
+    padding: 50px 20px;
+}
+.boton{
+    background-color: var(--color-primario);
+    width: 134px;
+    height: 44px;
+    border-radius: 30px;
+    color: white;
+    border-style: none;
+    box-shadow: 0 7px 25px rgb(123 104 238 / 25%);
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    padding: 13px 31px;
+    text-decoration: none;
+}
+.boton:hover{
+    background-color:white;
+    color: var(--color-primario);
+    border:var(--color-primario) 1px solid;
+}
+.texto{
+    width: 50%;
+}
+.img-banner{
+    width: 50%;
+}
+.titulo{
+    font-weight: 700;
+    font-size: 3rem;
+}
+p{
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 50px 150px 30px 0px;
+    line-height: 30px;
+}
+.arriba{
+    align-items: flex-start;
+}
+.izquierda{
+    width: 50%;
+    padding-right: 60px;
+}
+.derecha{
+    width: 50%;
+}
+.pregunta{
+    font-weight: 700;
+    font-size: 36px;
+}
+.bullets{
+    list-style-type: none;
+}
+.lista {
+    font-weight: 700;
+    font-size: 16px;
+    Position: relative;
+    Right: 40px;
+}
+.lista::before{
+    content: "01";
+    color: white;
+    display: inline-block;
+    background-color: var(--color-primario);
+    height: 25px;
+    width: 40px;
+    border-radius: 30px;
+    text-align: center;
+}
+.lista2::before{
+    content: "02";
+}
+.lista3::before{
+    content: "03";
+}
+.p-lista{
+    color: #B3B2B7;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 30%;
+    background-color: #FAFAFA;
+}
+.ali{
+    position:relative;
+    margin-top: -20%;
+    padding-bottom: 5%;
+}
+.abajo{
+    text-align: center;
+    color: var(--color-secundario);
+    padding-bottom: 5%;
+}
+.nombre{
+    align-items: center;
+    padding-bottom: 5%;
+}
+.centrado{
+    text-align: center;
+    color: #B3B2B7;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5% 10% 10% !important;
+}
+.contenedor{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 12%;
+    align-items: center;
+}
+.simplify{
+    background-color: var(--color-primario);
+}
+.atraer{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    width: 50%;
+}
+.blanco{
+    background-color:white;
+    color: var(--color-primario);
+    border:var(--color-primario) 1px solid;
+}
+.blanco:hover{
+    background-color:var(--color-primario);
+    color: white;
+}
+.foot{
+    background-color: #1E1E26;
+}
+.rrss{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50%;
+}
+.redes{
+    color: white;
+    font-size: 26px;
+    padding-right: 10%;
+}
+.menu-abajo{
+    list-style-type: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    align-items:flex-start ;
+}
+.campo{
+    width: 134px;
+    height: 44px;
+    border-radius: 30px;
+    border-style: none;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    padding: 13px 3px;
+}
+.go{
+   width: 60px;
+   padding: 13px 3px;
+   outline: none;
+}
+
+
+/*--------- MediaQuerys --------*/
+@media (max-width:375px) {
+.general{
+    align-items: center;
+    padding: 5% 2%;
+}
+.movil{
+    flex-direction: column-reverse;
+}
+.nada{
+    display: none;
+}
+.banner{
+    padding: 0px 0px;
+    width: 100%;
+}
+.texto{
+    width: 100%;
+    text-align: center;
+}
+.img-banner{display: none;
+}
+.titulo{
+    font-weight: 700;
+    font-size: 2rem;
+}
+p{
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 30px 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.arriba{
+    flex-direction: column;
+    width: 100%;
+}
+.izquierda{
+    width: 100%;
+    padding-right: 0px;
+}
+.derecha{
+    width: 100%;
+}
+.pregunta{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.lista {
+    text-align: center;
+}
+.usuario{
+    width: 90%;
+    padding-top: 10%;
+}
+.atraer{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+}
+.rrss{
+    padding-top: 10%;
+}
+.centrado{
+    margin-bottom: 20%;
+}
+}
